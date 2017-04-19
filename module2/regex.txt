@@ -1,0 +1,13 @@
+      Destination     Mask            Path_Cost Type2_Cost Path_Type 
+      50.1.1.0        255.255.255.0   3         0          Intra     
+      Adv_Router      Link_State      Dest_Type State      Tag       Flags
+      1.0.0.1         1.0.0.1         Network   Valid      0          2000  
+      Paths Out_Port        Next_Hop        Type      State     
+      1     ve 100          100.1.1.2       OSPF      00 00
+
+      Destination     Mask            Path_Cost Type2_Cost Path_Type 
+      50.1.2.0        255.255.255.0   3         0          Inter     
+      Adv_Router      Link_State      Dest_Type State      Tag       Flags
+      1.0.0.1         50.1.2.0        Network   Valid      0          0000  
+      Paths Out_Port        Next_Hop        Type      State     
+      1     ve 100          100.1.1.2       OSPF      00 00
