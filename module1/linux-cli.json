@@ -1,0 +1,9 @@
+{
+    "common_linux_cli": {
+        "dname" : { "cli": "call:pyBAS.libs.sample.get_dut_name,1,2,{{sample}}" , "desc" : "sample for composite local api", "tpl": "null.tpl"},
+        "date" : { "cli": "date" , "desc" : "dumps the system date to stdout", "tpl": "linux_date.tpl"},
+        "dump" : { "cli": "nfdump -r {0}" , "desc" : "dumps the Netflow data to stdout", "tpl": "null.tpl"},
+        "stop_capture" : { "cli": "killall nfcapd" , "desc" : "stops netflow capturing", "tpl": "null.tpl"},
+        "start_capture": {"cli": "nfcapd -p {0} -l {1} -D" , "desc" : "captures the Netflow data to file", "tpl": "null.tpl"}
+    }
+}

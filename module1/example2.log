@@ -1,0 +1,4 @@
+this is my first debug message from child logger
+I do not want this to propogate:not propogated
+this will log as an info message
+this also should get logged
